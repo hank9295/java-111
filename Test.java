@@ -1,10 +1,20 @@
 public class Test{	
     public static void main(String[] args){
-        System.out.println(args[0]);
-        printStr("Hank");
+        int num = 1;        
+        printStr(num);
+        num = 2;        
+        printStr(num);
+        num = num + 1;
+        printStr(num);
+        num += 1;        
+        printStr(num);
+        num++;        
+        printStr(num);
+        ++num;        
+        printStr(num);
     }
     
-    public static void printStr(String str){
-        System.out.println("My Name = " + str);
+    public static void printStr(int str){
+        System.out.println(str);
     }
 }
