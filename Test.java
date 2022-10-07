@@ -8,17 +8,18 @@ public class Test{
         System.out.print("Enter first integer:");
         grade = input.nextInt();
         
-        switch(grade / 10 ){
-			case 9 :
+        switch(grade){
+			case 100 :
+			case 90 :
 			    System.out.println("A");
 				break;
-			case 8 :
+			case 80 :
 				System.out.println("B");
 				break;
-			case 7 :
+			case 70 :
 				System.out.println("C");
 				break;
-			case 6 :
+			case 60 :
 				System.out.println("D");
 				break;
 			default  :
