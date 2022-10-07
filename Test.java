@@ -7,10 +7,10 @@ public class Test{
         Scanner input = new Scanner(System.in);        
         System.out.print("Enter first integer:");
         grade = input.nextInt();
-        	if(grade>100){
-               System.out.print("Error");
-            }
-			else{
+		while(grade>100 | grade<0){
+               System.out.print("please enter again:");
+			   grade = input.nextInt();
+			}
             switch(grade/10){
 			    case 10 :
 			    case 9 :
@@ -28,8 +28,6 @@ public class Test{
 				default  :
 					System.out.println("E");
 					break;
-			}
-		}	
-         
+			}       
     }
 }
