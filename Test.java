@@ -8,7 +8,7 @@ public class Test{
         System.out.print("Enter first integer:");
         grade = input.nextInt();
         	if(grade>100){
-               System.out.print("please enter again:");
+               System.out.print("Error");
             }
 			else{
             switch(grade/10){
