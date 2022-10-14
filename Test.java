@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Test{	
     public static void main(String[] args){
-        int grade = 0;
-		String space = "";
+        int row = 0;
              
-		while (grade < 10 ){
-            System.out.printf("%d %n", grade);
-			grade = grade + 1;
-			space = space + " ";
-			System.out.printf(space);
-			
-			
+		while (row < 5 ){
+			int star = 0; 
+			while (star <= row ){
+                System.out.print("*");
+				star = star + 1;
+		    }
+			System.out.println("");
+			row = row + 1;
 		}
     }
 }
