@@ -3,22 +3,26 @@ import java.util.Scanner;
 public class Test{	
     public static void main(String[] args){
         int row = 0;
-		int t;
+		String star = "*";
              
-		while (row < 9){
-			t = row;
-			if (row >= 5){
-				t = 8 - row;
+		while (row < 5){
+			int b = 4 - row;
+			while (b > 0){
+				System.out.print(" ");
+				b = b - 1;
 			}
-			int star = 0;
-			while (star <= t){
-				System.out.print("*");
-				star = star + 1;
-			} 		
-			System.out.println("");
+			System.out.println(star);
+			star = star + "**";
+			
 			row = row + 1;
-			}
+
+				
 			
 			
+			
+			
+	
 		}
+	}
 }
+ 
