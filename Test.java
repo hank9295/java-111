@@ -5,7 +5,7 @@ public class Test{
 		int star = 0;
 		int col;
              
-		while (row < 5){
+		while (row < 9){
 			col = 0;
 			while (col < blake){
 				System.out.print(" ");
@@ -19,8 +19,14 @@ public class Test{
       		}   
             System.out.print("\n");		
 			
-			blake -= 1;
-			star += 2;
+			if (row < 4){
+			    blake -= 1;
+			    star += 2;
+			}
+			else {
+				blake += 1;
+				star -= 2;
+			}
 			row += 1;
 			    			
 	
