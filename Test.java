@@ -1,28 +1,29 @@
-import java.util.Scanner;
-
 public class Test{	
     public static void main(String[] args){
         int row = 0;
-		String star = "*";
+		int blake = 4;
+		int star = 0;
+		int col;
              
 		while (row < 5){
-			int b = 4 - row;
-			while (b > 0){
+			col = 0;
+			while (col < blake){
 				System.out.print(" ");
-				b = b - 1;
+				col += 1;
 			}
-			System.out.println(star);
-			star = star + "**";
 			
-			row = row + 1;
-
-				
+			col = 0 ;
+			while (col <= star) {
+			    System.out.print("*");
+			    col += 1;
+      		}   
+            System.out.print("\n");		
 			
-			
-			
-			
+			blake -= 1;
+			star += 2;
+			row += 1;
+			    			
 	
 		}
 	}
 }
- 
