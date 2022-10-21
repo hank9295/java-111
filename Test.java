@@ -1,35 +1,10 @@
 public class Test{	
     public static void main(String[] args){
-        int row = 0;
-		int blake = 4;
-		int star = 0;
-		int col;
-             
-		while (row < 9){
-			col = 0;
-			while (col < blake){
-				System.out.print(" ");
-				col += 1;
+	    for ( int i=1; i<10; i++){
+			for ( int j=1; j<10; j++){
+			System.out.printf("%d*%d=%d\t",i,j,i*j);
 			}
-			
-			col = 0 ;
-			while (col <= star) {
-			    System.out.print("*");
-			    col += 1;
-      		}   
-            System.out.print("\n");		
-			
-			if (row < 4){
-			    blake -= 1;
-			    star += 2;
-			}
-			else {
-				blake += 1;
-				star -= 2;
-			}
-			row += 1;
-			    			
-	
+			System.out.println();
 		}
 	}
-}
+}	
