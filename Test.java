@@ -4,13 +4,19 @@ public class Test{
 		int k = 7;
 		
 		System.out.printf("%d%n",k);
-		a = add(k, 4);
+		
+		Test1 t1 = new Test1();
+		a = t1.add(k, 4);
 		System.out.printf("%d%n",a);
     }
 
-	public static int add(int x, int y){          
+}
+
+class Test1{
+	public int add(int x, int y){          
 		//int t = add(x, y);
 		int t = x + y;
 		return t;
 	}	
+                  
 }
