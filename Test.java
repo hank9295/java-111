@@ -1,17 +1,22 @@
-import java.util.Scanner;
-public class Test{	
+public class User{	
     public static void main(String[] args){
-		int money=0;  
-		int km=0;
-		int a=85;
-		Scanner input = new Scanner(System.in);        
-        System.out.print("km:");
-        km = input.nextInt();
-		if(km<=7)
-			System.out.printf("%d",a);
-		else if(km>7){
-			money=(km-7)*5+a;
-		    System.out.printf("%d",money);
-		}
+		int[] iArr = {7, 3, 4, 9, 6};
+		int i;
+		for (int x=0; x<iArr.length-1; x++){
+			if (iArr[x]>iArr[x+1]){
+				i = iArr[x];
+				iArr[x]=iArr[x+1];
+				iArr[x+1]=i;
+			}	
+		}	
+				
+			
+				
+		for (int x=0; x<iArr.length; x++){			
+			System.out.println(">>" + iArr[x]);
+		}	
 	}
+	public static void add(int x) {
+		System.out.println("===>" + x);
+	}	
 }	
