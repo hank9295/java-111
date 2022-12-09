@@ -1,25 +1,15 @@
 public class Test{	
     public static void main(String[] args){
-		int[] arr = {9, 8, 7, 6, 5};
-		int i;
+		int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 		int count = 0;
+		int i;
 		for (int x=0; x<arr.length; x++){
-			for (int y=0; y<arr.length-x-1; y++){
-				if (arr[y]>arr[y+1]){
-					i = arr[y];
-					arr[y]=arr[y+1];
-					arr[y+1]=i;
+				if (arr[x] == 2){
+					System.out.println(">>"+x);
+					break;
 				}
-			count++;
-			}	
-		}	
-						
-		for (int x=0; x<arr.length; x++){			
-			System.out.println(">>" + arr[x]);
-		}	
-			System.out.printf("%d",count);
+				count++;
+		}
+		System.out.println("count>>" + count);
 	}
-	public static void add(int x) {
-		System.out.println("===>" + x);
-	}	
-}	
+}		
