@@ -4,11 +4,11 @@ public class Test{
 		int i;
 		int count = 0;
 		for (int x=0; x<arr.length; x++){
-			for (int y=0; y<x-1; y++){
-				if (arr[x]<arr[y]){
-					i = arr[x];
-					arr[x]=arr[y];
-					arr[y]=i;
+			for (int y=0; y<arr.length-x-1; y++){
+				if (arr[y]>arr[y+1]){
+					i = arr[y];
+					arr[y]=arr[y+1];
+					arr[y+1]=i;
 				}
 			count++;
 			}	
