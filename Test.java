@@ -1,28 +1,18 @@
 public class Test{	
     public static void main(String[] args){
-		int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-		int left = 0;
-		int right = arr.length-1;
-		int medianIndex;
-		int count = 0;
-		int numder = 2;
-		int numberIndex = 0;
+		int x = 10;
+		int y = x;
+		y = 20; 
+		System.out.println("x=" + x);
+		System.out.println("y=" + y);
 		
-			for (int x=0; x<3; x++){
-				medianIndex = (right - left)/2+left;
-				if (arr[medianIndex] == numder){
-					numberIndex = medianIndex;
-					break;		
-		        }
-				count++;
-				
-				if (numder > arr[medianIndex])
-					right = medianIndex/2;
-				else
-					left = medianIndex;
-					
-		    }
-		System.out.println("The position is>>" + numberIndex);	
-		System.out.println("count>>" + count);
+		
+		
+
+		int[] arr = {1, 2, 3, 4, 5, 6, 7,};
+		int[] arr2 = arr;
+		arr[0] = 10;	
+		System.out.println("arr[0]=" + arr[0]);
+		System.out.println("arr2[0]=" + arr2[0]);
 	}
 }	
