@@ -1,10 +1,19 @@
 public class Test{	
     public static void main(String[] args){
-		int total = 0;
-		for(String str : args) {
-		total += Integer.parseInt(str);
-		System.out.println("args[] " + str);
-		}
-		System.out.println("total " + total);
+		Human.printheight();
+	}
+}	
+
+class Human{	
+	int sex;
+	static int height = 180;
+    private int weight = 75;
+	
+	public static void printheight(){
+		System.out.println(height);
+	}	
+	
+	private void printweight(){
+		System.out.println(weight);
 	}	
 }	
