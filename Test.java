@@ -1,27 +1,17 @@
+import java.util.Arrays;
 public class Test{
 	public static void main(String[] args){
-		Student[] arr1 = new Student[3];
-		arr1[0] = new Student();
-		arr1[1] = new Student();
-		arr1[2] = new Student();
-		arr1[0].id = "10";
-		arr1[1].id = "12";
-		arr1[2].id = "13";
-		for (Student good : arr1){
-			good.id = "100";
-			System.out.println(good.id);
-		}
-
+		int[] arr = {11, 2, 3, 14, 5, 16, 7};
 		
-		System.out.println("====================");
+		int min = Integer.MAX_VALUE;
+	
 		
-		for (Student good : arr1){
-			System.out.println(good.id);
-		}
 
-	}
-}	
+		Arrays.sort(arr);
+		
+		for(int e : arr)
+			System.out.println("e = " + e);
+			System.out.println();
+	}		
 
-class Student{
-	String id;
 }
